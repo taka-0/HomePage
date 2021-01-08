@@ -160,9 +160,10 @@ cursor: pointer;
  .first-block{ 
  background: center/cover  url("../images/kagawa.jpg");
  height: 500px;
+ width: 100%;
  font-size: 50px;
  font-family: 'HGP行書体';
- padding-top: 40px;
+ padding-top: 10px;
  text-align: center;
 }
 
@@ -175,8 +176,6 @@ cursor: pointer;
 
 .second-block ul{
   width: 100%;
-  padding: 0.5em 1em;
-  margin: 2em 0;
   color: #5d627b;
   background: rgb(183, 212, 245);
   border-top: solid 5px #5d627b;
@@ -190,7 +189,9 @@ cursor: pointer;
     width: 90%;
     padding-right: 20px;
 }
-
+.About_text1{
+  width: 90%;
+}
 .About_detail{
   display: flex;
   margin-top: 20px;
@@ -214,27 +215,35 @@ cursor: pointer;
 
 
 img.self{
-  width: 55%;
-  height: 60%;
+  width: 200px;
+  height: 200px;
   position:relative;
   top: 10%;
-  left: 10%;
+  left:10%;
   border-radius: 50%;
 
 }
 
 @media screen and (max-width: 770px){
   img.self{
-    width: 60%;
-    height: 45%;
+    width: 150px;
+    height: 150px;
+
+  }
+}
+@media screen and (max-width: 480px){
+  img.self{
+    width: 120px;
+    height: 120px;
 
   }
 }
 
 img.fight,img.hike{
-  width: 200px;
-  height: 200px;
+  width: 98%;
+  height: 300px;
   margin-right: 30px;
+  justify-content: space-between;
 }
 
 
@@ -268,7 +277,7 @@ img.fight,img.hike{
 
 .texts{
   padding: 0.5em 1em;
-  margin: 2em 0;
+  margin: 2em 0; 
   color: #5d627b;
   background:  rgb(183, 212, 245);
   border-top: solid 5px #5d627b;
@@ -281,7 +290,7 @@ img.fight,img.hike{
   text-decoration: underline;
   
 }
-@media (max-width: 1000px) {            
+@media (max-width: 770px) {            
   /* .flex-listにflex-wrapを指定してください */          
  .info {            
   flex-wrap: wrap;           
@@ -290,9 +299,10 @@ img.fight,img.hike{
 
   /* .flex-list li にwidthを50%に指定してください */            
    .info li {            
-  width: 45%;
+  width: 48%;
   padding: 10px;
-  box-sizing: border-box;            
+  box-sizing: border-box; 
+  float: left;           
   }            
 }
 
