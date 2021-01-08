@@ -80,7 +80,7 @@ header {
     max-width: 320px;
     height: 100vh;
     padding: 53px 16px 16px;
-    background: #1f2c37;
+    background: #244969;
     overflow: auto;
     transition: .3s ease-in-out;
     -webkit-transform: translateX(-105%);
@@ -138,7 +138,7 @@ input:checked ~ #h-menu_black {
     transition-duration: 0.2s;
 }
 #h-menu_content li a:hover {
-    background: #283b4b;
+    background: #1f2c37;
 }
 .sanbonsen{
   width:30px;
